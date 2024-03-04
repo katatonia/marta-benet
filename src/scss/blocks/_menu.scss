@@ -1,0 +1,23 @@
+.menu {
+    font: {
+        family: $ff-lato;
+        size: 15px;
+    }
+    text-transform: uppercase;
+    display: flex;
+    gap: 16px;
+    margin-bottom: 34px;
+
+    &__item {
+        transition: .3s;
+
+        a {
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        &:hover {
+            opacity: .5;
+        }
+    }
+}

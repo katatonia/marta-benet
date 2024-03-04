@@ -1,0 +1,48 @@
+.newsletter {
+	&__wrapper {
+		border: {
+			top: 1px solid rgba(0, 0, 0, 0.8);
+			bottom: 1px solid rgba(0, 0, 0, 0.5);
+		}
+		padding: 123px 0 126px;
+	}
+
+	&__title {
+		margin-bottom: 110px;
+		text-align: center;
+	}
+
+	&__form {
+		input {
+			width: 576px;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+			display: block;
+			text-align: center;
+			margin: 0 auto;
+			background-color: transparent;
+            font: {
+                family: inherit;
+                size: inherit;
+                weight: inherit;
+            }
+			color: $color-black;
+			margin-bottom: 24px;
+		}
+
+		p {
+			text-align: center;
+            margin-bottom: 16px;
+		}
+
+        span {
+            display: block;
+            text-align: center;
+            margin-bottom: 27px;
+        }
+	}
+
+    &__btn {
+        display: block;
+        margin: 0 auto;
+    }
+}

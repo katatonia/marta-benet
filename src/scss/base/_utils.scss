@@ -1,0 +1,30 @@
+.button {
+    border: 1px solid $color-black;
+    border-radius: 20px;
+    padding: 5px 25px;
+    text-transform: lowercase;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        color: $color-white;
+        background-color: $color-black;
+    }
+}
+
+.title {
+    font: {
+        family: $ff-roboto;
+        size: 52px;
+    }
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }

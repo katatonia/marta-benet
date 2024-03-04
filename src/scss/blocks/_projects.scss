@@ -1,0 +1,29 @@
+.projects {
+    padding-bottom: 192px;
+
+    &__title {
+        margin: 0 auto 40px;
+        text-align: center;
+    }
+
+    &__text-content {
+        max-width: 850px;
+        text-align: center;
+        margin: 0 auto 60px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 24px;
+
+        img {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__item {
+        span {
+            cursor: default;
+        }
+    }
+}

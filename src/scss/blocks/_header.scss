@@ -1,0 +1,33 @@
+.header {
+    &__wrapper {
+        position: relative;
+    }
+
+    &__body {
+        position: relative;
+        z-index: 2;
+        padding: 48px 0 192px;
+    }
+
+    &__bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+
+        img {
+            object-position: center;
+        }
+    }
+
+    &__title {
+        font: {
+            family: $ff-drafting-mono-light;
+            size: 45px;
+        }
+        text-transform: lowercase;
+        margin-top: 408px;
+        text-align: center;
+    }
+}

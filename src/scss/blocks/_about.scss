@@ -1,0 +1,16 @@
+.about {
+    padding-bottom: 100px;
+
+    &__images {
+        display: flex;
+        gap: 24px;
+        padding-bottom: 113px;
+    }
+
+    &__text-content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        margin-bottom: 37px;
+    }
+}

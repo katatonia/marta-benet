@@ -1,0 +1,80 @@
+.slider {
+    padding-bottom: 126px;
+    display: flex;
+
+    &__desc {
+        margin: 16px 0 5px;
+    }
+
+	&__btns {
+		display: flex;
+		gap: 8px;
+		position: absolute;
+        top: 0;
+        right: 0;
+
+		button {
+			&:first-child {
+				transform: scale(-1, 1);
+			}
+		}
+	}
+
+	&__btn {
+		width: 48px;
+		height: 48px;
+		position: relative;
+		border: 1px solid $color-black;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+        cursor: pointer;
+        transition: all .3s;
+
+		span {
+			position: relative;
+			width: 20px;
+			height: 3px;
+			background-color: $color-black;
+			border-radius: 10px;
+
+			&::before {
+				content: "";
+				position: absolute;
+				width: 9px;
+				height: 3px;
+				background-color: $color-black;
+				border-radius: 10px;
+				top: -3px;
+				right: 0;
+				transform: rotate(45deg);
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				width: 9px;
+				height: 3px;
+				background-color: $color-black;
+				border-radius: 10px;
+				bottom: -3px;
+				right: 0;
+				transform: rotate(-45deg);
+			}
+		}
+
+        &:hover {
+            background-color: $color-black;
+
+            span {
+                background-color: $color-white;
+
+                &::before,
+                &::after {
+                    background-color: $color-white;
+                }
+            }
+        }
+	}
+}

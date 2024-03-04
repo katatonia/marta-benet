@@ -1,0 +1,26 @@
+.nav {
+    font: {
+        family: $ff-lato;
+        size: 15px;
+    }
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__block {
+        display: flex;
+    }
+
+    &__item {
+        padding: 15px 20px;
+        cursor: pointer;
+        transition: .3s;
+
+        &:hover {
+            background-color: rgb(255, 255, 255, 0.3);
+            border-radius: 30px;
+            transition: background-color .3s;
+        }
+    }
+}
