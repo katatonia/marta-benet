@@ -1,10 +1,29 @@
 .slider {
-    padding-bottom: 126px;
-    display: flex;
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		overflow: hidden;
+	}
+
+	&__item {
+		width: 339px;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		margin-right: 20px;
+
+		&:last-child {
+			margin: 0;
+		}
+	}
 
     &__desc {
         margin: 16px 0 5px;
     }
+
+	&__price {
+		margin-top: auto;
+	}
 
 	&__btns {
 		display: flex;
@@ -38,6 +57,7 @@
 			height: 3px;
 			background-color: $color-black;
 			border-radius: 10px;
+			cursor: pointer;
 
 			&::before {
 				content: "";
@@ -49,6 +69,7 @@
 				top: -3px;
 				right: 0;
 				transform: rotate(45deg);
+				cursor: pointer;
 			}
 
 			&::after {
@@ -61,6 +82,7 @@
 				bottom: -3px;
 				right: 0;
 				transform: rotate(-45deg);
+				cursor: pointer;
 			}
 		}
 

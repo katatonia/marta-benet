@@ -60,9 +60,17 @@
                 <div class="container">
                     <h2 class="about__title visually-hidden">About me</h2>
                     <div class="about__images">
-                        <img src="img/about/about-1.jpg" class="about__img" width="414" height="276" alt="Work process">
-                        <img src="img/about/about-2.jpg" class="about__img" width="305" height="381" alt="Work process">
-                        <img src="img/about/about-3.jpg" class="about__img" width="305" height="381" alt="Work process">
+                        <div class="about__img about__img_1">
+                            <img src="img/about/about-1.jpg" width="414" height="276" alt="Work process">
+                        </div>
+                        <div class="about__img about__img_2">
+                            <img src="img/about/about-2.jpg" class="about__img" width="305" height="381"
+                                alt="Work process">
+                        </div>
+                        <div class="about__img about__img_3">
+                            <img src="img/about/about-3.jpg" class="about__img" width="305" height="381"
+                                alt="Work process">
+                        </div>
                     </div>
                     <div class="about__text-content">
                         <p>
@@ -177,53 +185,57 @@
                 </div>
             </section>
             <section class="novelties">
-                <div class="novelties__wrapper container">
-                    <h2 class="novelties__title title">A selection of novelties</h2>
-                    <button class="novelties__btn button">View all</button>
-                    <div class="slider">
-                        <div class="slider__item">
-                            <img class="slider__img" width="339" height="424" src="img/slider/slider-1.jpg"
-                                alt="Cups and kettle">
-                            <div class="slider__desc">Milano Sugar Bowl Sole</div>
-                            <div class="slider__price">36 €</div>
-                        </div>
-                        <div class="slider__item">
-                            <img class="slider__img" width="339" height="424" src="img/slider/slider-2.jpg"
-                                alt="Plates and breadstick holder">
-                            <div class="slider__desc">Set of 4 Bread Plates & 1 Breadstick Holder Entrellaçat</div>
-                            <div class="slider__price">105 €</div>
-                        </div>
-                        <div class="slider__item">
-                            <img class="slider__img" width="339" height="424" src="img/slider/slider-3.jpg"
-                                alt="Two cups">
-                            <div class="slider__desc">Ralleta Medium Aperitivo Set Blue</div>
-                            <div class="slider__price">72 €</div>
-                        </div>
-                        <div class="slider__item">
-                            <img class="slider__img" width="339" height="424" src="img/slider/slider-1.jpg"
-                                alt="Cups and kettle">
-                            <div class="slider__desc">Milano Sugar Bowl Sole</div>
-                            <div class="slider__price">42 €</div>
-                        </div>
-                        <div class="slider__item">
-                            <img class="slider__img" width="339" height="424" src="img/slider/slider-2.jpg"
-                                alt="Plates and breadstick holder">
-                            <div class="slider__desc">Set of 4 Bread Plates & 1 Breadstick Holder Entrellaçat</div>
-                            <div class="slider__price">67 €</div>
-                        </div>
-                        <div class="slider__item">
-                            <img class="slider__img" width="339" height="424" src="img/slider/slider-3.jpg"
-                                alt="Two cups">
-                            <div class="slider__desc">Ralleta Medium Aperitivo Set Blue</div>
-                            <div class="slider__price">98 €</div>
-                        </div>
-                        <div class="slider__btns">
-                            <button class="slider__btn">
-                                <span></span>
-                            </button>
-                            <button class="slider__btn">
-                                <span></span>
-                            </button>
+                <div class="container">
+                    <div class="novelties__wrapper">
+                        <h2 class="novelties__title title">A selection of novelties</h2>
+                        <button class="novelties__btn button">View all</button>
+                        <div class="slider">
+                            <ul class="slider__list">
+                                <li class="slider__item">
+                                    <img class="slider__img" width="339" height="424" src="img/slider/slider-1.jpg"
+                                        alt="Cups and kettle">
+                                    <div class="slider__desc">Milano Sugar Bowl Sole</div>
+                                    <div class="slider__price">36 €</div>
+                                </li>
+                                <li class="slider__item">
+                                    <img class="slider__img" width="339" height="424" src="img/slider/slider-2.jpg"
+                                        alt="Plates and breadstick holder">
+                                    <div class="slider__desc">Set of 4 Bread Plates & 1 Breadstick Holder Entrellaçat</div>
+                                    <div class="slider__price">105 €</div>
+                                </li>
+                                <li class="slider__item">
+                                    <img class="slider__img" width="339" height="424" src="img/slider/slider-3.jpg"
+                                        alt="Two cups">
+                                    <div class="slider__desc">Ralleta Medium Aperitivo Set Blue</div>
+                                    <div class="slider__price">72 €</div>
+                                </li>
+                                <li class="slider__item">
+                                    <img class="slider__img" width="339" height="424" src="img/slider/slider-1.jpg"
+                                        alt="Cups and kettle">
+                                    <div class="slider__desc">Milano Sugar Bowl Sole</div>
+                                    <div class="slider__price">42 €</div>
+                                </li>
+                                <li class="slider__item">
+                                    <img class="slider__img" width="339" height="424" src="img/slider/slider-2.jpg"
+                                        alt="Plates and breadstick holder">
+                                    <div class="slider__desc">Set of 4 Bread Plates & 1 Breadstick Holder Entrellaçat</div>
+                                    <div class="slider__price">67 €</div>
+                                </li>
+                                <li class="slider__item">
+                                    <img class="slider__img" width="339" height="424" src="img/slider/slider-3.jpg"
+                                        alt="Two cups">
+                                    <div class="slider__desc">Ralleta Medium Aperitivo Set Blue</div>
+                                    <div class="slider__price">98 €</div>
+                                </li>
+                            </ul>
+                            <div class="slider__btns">
+                                <button class="slider__btn slider__btn_prev">
+                                    <span></span>
+                                </button>
+                                <button class="slider__btn slider__btn_next">
+                                    <span></span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -272,6 +284,8 @@
             </div>
         </footer>
     </div>
+
+    <script src="js/slider.js"></script>
 </body>
 
 </html>
