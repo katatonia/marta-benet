@@ -1,12 +1,13 @@
 .header {
+    position: relative;
+
     &__wrapper {
         position: relative;
-    }
-
-    &__body {
-        position: relative;
         z-index: 2;
-        padding: 48px 0 192px;
+        padding: {
+            top: 48px;
+            bottom: 192px;
+        }
     }
 
     &__bg {
@@ -29,5 +30,12 @@
         text-transform: lowercase;
         margin-top: 408px;
         text-align: center;
+    }
+
+    @media (max-width: $mobile-width) {
+        &__title {
+            font-size: 30px;
+            margin-top: 308px;
+        }
     }
 }

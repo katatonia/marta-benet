@@ -2,7 +2,13 @@
 	&__list {
 		display: grid;
 		grid-template-columns: repeat(6, 1fr);
-		overflow: hidden;
+		overflow-x: auto;
+		scrollbar-width: none;
+		gap: 40px;
+	}
+
+	&__list::-webkit-scrollbar {
+		display: none;
 	}
 
 	&__item {
@@ -10,11 +16,6 @@
 		height: 100%;
 		display: flex;
 		flex-direction: column;
-		margin-right: 20px;
-
-		&:last-child {
-			margin: 0;
-		}
 	}
 
     &__desc {
@@ -98,5 +99,28 @@
                 }
             }
         }
+	}
+
+	@media (max-width: $tablet-width) {
+		&__btns {
+			top: auto;
+			bottom: -78px;
+		}
+	}
+
+	@media (max-width: $mobile-width) {
+		&__list {
+			gap: 0;
+			width: 280px;
+			margin: 0 auto;
+		}
+
+		&__item {
+			width: 280px;
+		}
+
+		&__price {
+			margin-top: 0;
+		}
 	}
 }

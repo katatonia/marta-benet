@@ -8,8 +8,9 @@
 
     &__list {
         display: grid;
-        grid-template-columns: repeat(3, 312px);
-        gap: 70px;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        gap: 60px;
         padding-bottom: 172px;
     }
 
@@ -17,6 +18,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 20px;
 
         h3 {
             font: {
@@ -24,6 +26,7 @@
                 size: 22px;
             }
             margin-bottom: 20px;
+            text-align: center;
         }
 
         p {
@@ -40,5 +43,25 @@
     &__button {
         display: block;
         margin: 0 auto;
+    }
+
+    @media (max-width: $tablet-width) {
+        &__list {
+            grid-template-columns: repeat(3, minmax(190px, 1fr));
+            gap: 30px;
+        }
+    }
+
+    @media (max-width: $mobile-width) {
+        padding-bottom: 132px;
+
+        &__title {
+            margin-bottom: 90px;
+        }
+
+        &__list {
+            grid-template-columns: 1fr;
+            padding-bottom: 132px;
+        }
     }
 }

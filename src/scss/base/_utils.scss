@@ -17,6 +17,10 @@
         family: $ff-roboto;
         size: 52px;
     }
+
+    @media (max-width: $tablet-width) {
+        font-size: 40px;
+    }
 }
 
 .visually-hidden {

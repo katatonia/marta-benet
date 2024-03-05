@@ -26,4 +26,13 @@
             cursor: default;
         }
     }
+
+    @media (max-width: $mobile-width) {
+        padding-bottom: 132px;
+
+        &__list {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }

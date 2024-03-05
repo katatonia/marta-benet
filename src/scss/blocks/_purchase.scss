@@ -66,4 +66,22 @@
             right: 0;
         }
     }
+
+	@media (max-width: $tablet-width) {
+        &__list {
+			font-size: 42px;
+		}
+   }
+
+   @media (max-width: $mobile-width) {
+	padding-bottom: 132px;
+
+		&__img {
+			display: none;
+		}
+
+		&__btn {
+			margin-top: 90px;
+		}
+   }
 }

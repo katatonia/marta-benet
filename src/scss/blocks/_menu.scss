@@ -5,6 +5,7 @@
     }
     text-transform: uppercase;
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
     margin-bottom: 34px;
 
@@ -19,5 +20,13 @@
         &:hover {
             opacity: .5;
         }
+    }
+
+    @media (max-width: $tablet-width) {
+        margin-bottom: 64px;
+    }
+
+    @media (max-width: $mobile-width) {
+        flex-direction: column;
     }
 }
