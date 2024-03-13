@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>marta / benet</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -29,7 +30,7 @@
                             <a href="#shop">Shop</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#">Contacts</a>
+                            <a href="#footer">Contacts</a>
                         </li>
                         <li class="nav__item">
                             <a href="#">IT</a>
@@ -89,7 +90,7 @@
                 </div>
             </section>
             <section class="purchase">
-                <div class="purchase__wrapper container">
+                <div class="container">
                     <h2 class="purchase__title">Here you can find the line of essential ceramics, all customizable
                         products and a curated selection of unique pieces</h2>
                     <div class="purchase__wrapper">
@@ -193,8 +194,10 @@
                         <div class="slider">
                             <ul class="slider__list">
                                 <li class="slider__item">
-                                    <img class="slider__img" width="339" height="424" src="img/slider/slider-1.jpg"
-                                        alt="Cups and kettle">
+                                    <div>
+                                        <img class="slider__img" width="339" height="424" src="img/slider/slider-1.jpg"
+                                            alt="Cups and kettle">
+                                    </div>
                                     <div class="slider__desc">Milano Sugar Bowl Sole</div>
                                     <div class="slider__price">36 €</div>
                                 </li>
@@ -258,7 +261,7 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
+        <footer id="footer" class="footer">
             <div class="container">
                 <ul class="menu">
                     <li class="menu__item">
@@ -290,6 +293,7 @@
 
     <script src="js/slider.js"></script>
     <script src="js/humburger.js"></script>
+    <script src="js/on-scroll-pictures.js"></script>
 </body>
 
 </html>

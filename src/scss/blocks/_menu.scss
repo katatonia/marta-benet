@@ -17,8 +17,10 @@
             padding: 10px;
         }
 
-        &:hover {
-            opacity: .5;
+        @include hover {
+            &:hover {
+                opacity: .5;
+            }
         }
     }
 
