@@ -1,1 +1,41 @@
+// Block 'purchase', on-scroll-pictures.js
 
+@keyframes leftToBottom {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 100%;
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes leftBackToTop {
+    0% {
+        bottom: 100%;
+        transform: translateY(100%);
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes rightToTop {
+    0% {
+        bottom: 0;
+    }
+    100% {
+        bottom: 100%;
+        transform: translateY(100%);
+    }
+}
+
+@keyframes rightBackToBottom {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 100%;
+        transform: translateY(-100%);
+    }
+}
